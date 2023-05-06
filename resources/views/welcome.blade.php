@@ -20,7 +20,7 @@
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
                     @auth
-                        <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
+                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
                     @else
                         <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
 
@@ -39,10 +39,6 @@
                 </div>
 
                 <div class="mt-16">
-                    <div class="w-full h-auto py-3.5 mb-6 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 flex items-center justify-center text-xs font-medium">
-                        <svg class="w-auto h-5 md:h-[1.125rem] hidden md:block flex-shrink-0 fill-current md:mr-2" viewBox="0 0 170 112" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M115.139 0c15.138 0 29.329 6.537 38.876 17.89 9.977 11.783 13.847 27.092 11.095 43.004-2.15 12.127-8.257 23.824-17.288 32.855-9.031 9.117-20.642 15.223-32.683 17.288-3.01.516-6.02.774-8.945.774h-89.44c-13.623 0-20.306-10.218-14.853-22.707l22.155-50.658a17.51 17.51 0 0 1 16.05-10.493h75.119c6.881 0 13.245 2.838 17.546 7.912 4.558 5.419 6.278 12.558 4.988 20.212-2.322 13.418-13.933 25.2-27.006 27.35-1.462.259-2.925.431-4.387.431l-63.993.055c-3.613.004-6.036-3.709-4.58-7.015l12.315-27.96h15.224l-7.298 16.786c-.861 1.981.59 4.196 2.751 4.196l46.768.005c6.451 0 14.88-7.827 16.428-15.998 1.462-7.74-3.269-11.955-8.687-11.955H40.157a3.425 3.425 0 0 0-3.148 2.064L15.95 92.28c-1.154 2.643.783 5.6 3.666 5.6l86.751-.002c2.236 0 4.473-.258 6.623-.602 18.922-3.182 35.177-19.438 38.532-38.703 2.064-11.784-.774-22.965-7.999-31.565-6.881-8.171-17.202-12.902-28.211-12.902h-32.4a3.445 3.445 0 0 0-3.156 2.073l-2.115 4.894H62.415l4.567-10.484A17.52 17.52 0 0 1 83.006.068L115.14 0Z" class=""></path></svg>
-                        <span>Droplet image maintained and managed by <a href="https://devdojo.com" target="_blank" class="underline font-bold">DevDojo</a>. Have questions or need help <a href="https://devdojo.com/questions" target="_blank" class="underline font-bold">visit our questions section</a>. Speed up your development with <a href="https://devdojo.com/questions" target="_blank" class="underline font-bold">DevDojo Pro</a> ⭐️</span>
-                    </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                         <a href="https://laravel.com/docs" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                             <div>
